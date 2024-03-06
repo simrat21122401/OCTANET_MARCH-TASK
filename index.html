@@ -4,154 +4,235 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Font Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Tailwind CSS link -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
-// v0 by Vercel.
-// https://v0.dev/t/26gRCFUypYX
--->
     <div class="flex flex-col min-h-[100dvh]">
+      <!-- header -->
       <header class="px-4 lg:px-6 h-14 flex items-center">
-        <a class="flex items-center justify-center" href="#"
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="h-6 w-6"
-          >
-            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg
-          ><span class="sr-only">Acme Inc</span></a
-        >
+        <a class="flex items-center justify-center" href="#">
+          <i class="fa-brands fa-apple text-xl"></i>
+          <span class="sr-only">Apple</span>
+        </a>
         <nav class="ml-auto flex gap-4 sm:gap-6">
-          <a
-            class="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Features </a
-          ><a
-            class="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Pricing </a
-          ><a
-            class="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            About </a
-          ><a
-            class="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
-          >
-            Contact
-          </a>
+          <a class="text-sm font-medium" href="#"> Mac </a>
+          <a class="text-sm font-medium" href="#"> iPad </a>
+          <a class="text-sm font-medium" href="#"> iPhone </a>
+          <a class="text-sm font-medium" href="#"> Watch </a>
+          <a class="text-sm font-medium" href="#"> TV </a>
+          <a class="text-sm font-medium" href="#"> Music </a>
+          <a class="text-sm font-medium" href="#"> Support </a>
+          <a class="text-sm font-medium" href="#"> Search </a>
+          <a class="text-sm font-medium" href="#"> Bag </a>
         </nav>
       </header>
+      <!-- end of header -->
+
       <main class="flex-1">
-        <section class="w-full py-12 md:py-24 lg:py-32">
-          <div class="container px-4 md:px-6">
-            <div
-              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-10"
-            >
-              <div class="space-y-2">
-                <h1
-                  class="text-3xl font-bold tracking-tighter md:text-4xl/tight lg:text-5xl/none"
-                >
-                  Spring Collection
-                </h1>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Introducing our latest collection. Shop the season's
-                  must-haves.
+        <section class="w-full py-6 md:py-12 lg:py-16 xl:py-24">
+          <div
+            class="container flex flex-col items-center justify-center gap-4 px-4 text-center md:px-6"
+          >
+            <div class="space-y-2">
+              <h1
+                class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl"
+              >
+                Introducing Apple VR
+              </h1>
+              <p
+                class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+              >
+                Experience a new dimension with Apple's breakthrough VR
+                technology. Immerse yourself in stunning worlds, connect with
+                friends, and unleash your creativity.
+              </p>
+            </div>
+            <div class="mx-auto w-full max-w-[800px] space-y-4">
+              <form
+                class="flex flex-col gap-2 min-[400px]:flex-row justify-center"
+              >
+                <input
+                  class="flex h-10 w-full rounded-md text-sm max-w-lg flex-1"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+              </form>
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Sign up to get notified when Apple VR launches.
+                <a class="underline underline-offset-2" href="#">
+                  Terms &amp; Conditions
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 border-t">
+          <div class="container grid items-center gap-4 px-4 md:px-6">
+            <img
+              src="person-wearing-futuristic-high-tech-virtual-reality-glasses_23-2151141604.jpg"
+              width="550"
+              height="310"
+              alt="Image"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+            />
+            <div class="flex flex-col gap-2 text-center">
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mx-auto"
+              >
+                Explore the Possibilities
+              </h2>
+              <p
+                class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+              >
+                Apple VR opens the door to a world of innovation. From immersive
+                games to interactive learning, the potential is limitless.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-full py-12 md:py-24 lg:py-32 border-t">
+          <div class="container grid items-center gap-4 px-4 md:px-6">
+            <div class="grid gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-globe" style="font-size: 35px"></i>
+                <h3 class="text-xl font-bold">Exploration</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  Let your imagination run wild as you travel to distant planets
+                  and ancient civilizations.
                 </p>
               </div>
-              <div class="flex justify-end">
-                <a
-                  class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                  href="#"
-                >
-                  Shop Now
-                </a>
+              <div class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-gamepad" style="font-size: 35px"></i>
+                <h3 class="text-xl font-bold">Gaming</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  Experience the next level of gaming with immersive worlds and
+                  interactive adventures.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <i class="fa-solid fa-palette" style="font-size: 35px"></i>
+                <h3 class="text-xl font-bold">Creativity</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  Unleash your creativity with 3D painting, sculpting, and
+                  design tools that let you bring your ideas to life.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <i class="fa-regular fa-clock" style="font-size: 35px"></i>
+                <h3 class="text-xl font-bold">Training</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  Simulate real-world scenarios for training, education, and
+                  skill development with immersive VR experiences.
+                </p>
               </div>
             </div>
           </div>
         </section>
+
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div class="container px-4 md:px-6">
-            <div
-              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-10"
-            >
-              <div class="flex justify-end">
-                <a
-                  class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                  href="#"
-                >
-                  Shop Now
-                </a>
-              </div>
-              <div class="space-y-2">
-                <h2
-                  class="text-3xl font-bold tracking-tighter md:text-4xl/tight"
-                >
-                  Spring Collection
-                </h2>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Introducing our latest collection. Shop the season's
-                  must-haves.
-                </p>
-              </div>
+          <div class="container grid items-center gap-4 px-4 md:px-6">
+            <div class="space-y-2 text-center">
+              <h2
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl"
+              >
+                The Future of Reality
+              </h2>
+              <p
+                class="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400"
+              >
+                Apple VR redefines the way we interact with technology, merging
+                the digital and physical worlds to create immersive, engaging,
+                and unforgettable experiences.
+              </p>
             </div>
           </div>
         </section>
+
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
-          <div class="container px-4 md:px-6">
-            <div
-              class="grid max-w-5xl mx-auto items-center gap-6 lg:grid-cols-2 lg:gap-10"
-            >
-              <div class="space-y-2">
-                <h2
-                  class="text-3xl font-bold tracking-tighter md:text-4xl/tight"
-                >
-                  Spring Collection
-                </h2>
-                <p class="text-gray-500 dark:text-gray-400">
-                  Introducing our latest collection. Shop the season's
-                  must-haves.
+          <div class="container grid items-center gap-4 px-4 md:px-6">
+            <div class="grid gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="flex flex-col items-center gap-2">
+                <img
+                  src="samantha.jpg"
+                  width="150"
+                  height="150"
+                  alt="Avatar"
+                  class="rounded-full"
+                  style="aspect-ratio: 150 / 150; object-fit: cover"
+                />
+                <h3 class="text-xl font-bold">Samantha</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  "The Apple VR experience is truly magical. I felt like I was
+                  transported to another world."
                 </p>
               </div>
-              <div class="flex justify-end">
-                <a
-                  class="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                  href="#"
-                >
-                  Shop Now
-                </a>
+              <div class="flex flex-col items-center gap-2">
+                <img
+                  src="alex.avif"
+                  width="150"
+                  height="150"
+                  alt="Avatar"
+                  class="rounded-full"
+                  style="aspect-ratio: 150 / 150; object-fit: cover"
+                />
+                <h3 class="text-xl font-bold">Alex</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  "The Apple VR experience is truly magical. I felt like I was
+                  transported to another world."
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <img
+                  src="emily.jpg"
+                  width="150"
+                  height="150"
+                  alt="Avatar"
+                  class="rounded-full"
+                  style="aspect-ratio: 150 / 150; object-fit: cover"
+                />
+                <h3 class="text-xl font-bold">Emily</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  "The Apple VR experience is truly magical
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-2">
+                <img
+                  src="michael.jpg"
+                  width="150"
+                  height="150"
+                  alt="Avatar"
+                  class="rounded-full"
+                  style="aspect-ratio: 150 / 150; object-fit: cover"
+                />
+                <h3 class="text-xl font-bold">Michael</h3>
+                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                  "The Apple VR experience is truly magical. I felt like I was
+                  transported to another world."
+                </p>
               </div>
             </div>
           </div>
         </section>
       </main>
+
       <footer
         class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t"
       >
-        <p class="text-xs text-gray-500 dark:text-gray-400">
-          © 2024 Acme Inc. All rights reserved.
-        </p>
-        <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-          <a class="text-xs hover:underline underline-offset-4" href="#">
-            Terms of Service </a
-          ><a class="text-xs hover:underline underline-offset-4" href="#">
-            Privacy
-          </a>
-        </nav>
+        <nav class="flex flex-col gap-2 sm:flex-row"></nav>
       </footer>
     </div>
   </body>
