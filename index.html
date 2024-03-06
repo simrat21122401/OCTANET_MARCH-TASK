@@ -19,15 +19,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
-// v0 by Vercel.
-// https://v0.dev/t/26gRCFUypYX
--->
     <div class="flex flex-col min-h-[100dvh]">
       <!-- header -->
       <header class="px-4 lg:px-6 h-14 flex items-center">
         <a class="flex items-center justify-center" href="#">
-          <i class="fa-brands fa-apple text-xl"></i>
+          <i class="fa-brands fa-apple text-xl" style="font-size: 25px"></i>
           <span class="sr-only">Apple</span>
         </a>
         <nav class="ml-auto flex gap-4 sm:gap-6">
@@ -71,7 +67,9 @@
                   class="flex h-10 w-full rounded-md text-sm max-w-lg flex-1"
                   placeholder="Enter your email"
                   type="email"
+                  id="input"
                 />
+                <button class="align">Get Notified</button>
               </form>
               <p class="text-xs text-gray-500 dark:text-gray-400">
                 Sign up to get notified when Apple VR launches.
@@ -92,9 +90,9 @@
               alt="Image"
               class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
             />
-            <div class="flex flex-col gap-2 text-center">
+            <div class="flex flex-col gap-3 text-center">
               <h2
-                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mx-auto"
+                class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mx-auto shift"
               >
                 Explore the Possibilities
               </h2>
@@ -111,32 +109,51 @@
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
           <div class="container grid items-center gap-4 px-4 md:px-6">
             <div class="grid gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="flex flex-col items-center gap-2">
-                <i class="fa-solid fa-globe" style="font-size: 35px"></i>
+              <div class="flex flex-col items-center gap-2" id="shadow">
+                <i
+                  class="fa-solid fa-globe"
+                  style="font-size: 35px"
+                  id="circle"
+                ></i>
                 <h3 class="text-xl font-bold">Exploration</h3>
                 <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
                   Let your imagination run wild as you travel to distant planets
                   and ancient civilizations.
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
-                <i class="fa-solid fa-gamepad" style="font-size: 35px"></i>
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
+                <i
+                  class="fa-solid fa-gamepad"
+                  style="font-size: 35px"
+                  id="circle"
+                ></i>
                 <h3 class="text-xl font-bold">Gaming</h3>
-                <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
+                <p class="text-sm dark:text-gray-400/60">
                   Experience the next level of gaming with immersive worlds and
                   interactive adventures.
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
-                <i class="fa-solid fa-palette" style="font-size: 35px"></i>
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
+                <i
+                  class="fa-solid fa-palette"
+                  style="font-size: 35px"
+                  id="circle"
+                ></i>
                 <h3 class="text-xl font-bold">Creativity</h3>
                 <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
                   Unleash your creativity with 3D painting, sculpting, and
                   design tools that let you bring your ideas to life.
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
-                <i class="fa-regular fa-clock" style="font-size: 35px"></i>
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
+                <i
+                  class="fa-regular fa-clock"
+                  style="font-size: 35px"
+                  id="circle"
+                ></i>
                 <h3 class="text-xl font-bold">Training</h3>
                 <p class="text-sm text-gray-500/60 dark:text-gray-400/60">
                   Simulate real-world scenarios for training, education, and
@@ -169,7 +186,7 @@
         <section class="w-full py-12 md:py-24 lg:py-32 border-t">
           <div class="container grid items-center gap-4 px-4 md:px-6">
             <div class="grid gap-4 md:gap-8 sm:grid-cols-2 lg:grid-cols-4">
-              <div class="flex flex-col items-center gap-2">
+              <div class="flex flex-col items-center gap-2" id="shadow">
                 <img
                   src="samantha.jpg"
                   width="150"
@@ -184,7 +201,8 @@
                   transported to another world."
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
                 <img
                   src="alex.avif"
                   width="150"
@@ -199,7 +217,8 @@
                   transported to another world."
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
                 <img
                   src="emily.jpg"
                   width="150"
@@ -213,7 +232,8 @@
                   "The Apple VR experience is truly magical
                 </p>
               </div>
-              <div class="flex flex-col items-center gap-2">
+
+              <div class="flex flex-col items-center gap-2" id="shadow">
                 <img
                   src="michael.jpg"
                   width="150"
