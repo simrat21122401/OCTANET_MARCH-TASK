@@ -17,6 +17,7 @@ body {
 #shadow {
   text-align: center;
   padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.249);
 }
 
 .align {
@@ -49,4 +50,14 @@ nav {
 
 .margin {
   margin-left: 40px;
+}
+
+/* img,
+h3,
+p {
+  padding: 4px;
+} */
+
+footer i {
+  color: white;
 }
