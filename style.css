@@ -61,3 +61,14 @@ p {
 footer i {
   color: white;
 }
+
+@media (max-width: 420px) {
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer {
+    width: 100%;
+  }
+}
