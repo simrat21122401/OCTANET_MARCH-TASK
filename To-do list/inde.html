@@ -28,7 +28,7 @@
             href="#"
             class="flex items-center space-x-4 ml-12 rtl:space-x-reverse"
           >
-            <i class="fa-regular fa-folder-open" style="color: #ffc800"></i>
+            <!-- <i class="fa-regular fa-folder-open" style="color: #ffc800"></i> -->
             <span
               class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
               >To-do list</span
@@ -45,7 +45,7 @@
               <li>
                 <a
                   href="#"
-                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-4-500"
                   aria-current="page"
                   >Home</a
                 >
@@ -83,39 +83,53 @@
         </div>
       </nav>
 
-      <!-- LIST -->
-      <div class="absolute left-96 p-12 bottom-34 w-full" id="lists">
-        <ul class="p-4 transparent">
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
+      <div>
+        <!-- <img src="./images/pngegg (1).png" style="width: 400px" /> -->
+        <div class="notebooks">
+          <!-- LIST -->
+          <div class="p-10 w-full trf" id="lists">
+            <div style="margin-left: 60%"><h4 class="date">Date:</h4></div>
+            <ul class="p-4 text-white" type="square">
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
 
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
 
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
 
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
 
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
 
-          <li class="p-3">
-            <input type="text" class="w-2/4 trans" />
-            <input type="checkbox" class="check" />
-          </li>
-        </ul>
+              <li class="p-3">
+                <input type="text" placeholder="(empty)" class="trans" />
+                <input type="checkbox" class="check" />
+              </li>
+            </ul>
+
+            <textarea style="width: 70%"> NOTES</textarea>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-1 mar">
+        <img src="./images/iris_3200079.png" width="150px" />
+      </div>
+      <div class="absolute bottom-4">
+        <img src="./images/221812-P1JDD9-430-removebg-preview.png" />
       </div>
     </div>
   </body>

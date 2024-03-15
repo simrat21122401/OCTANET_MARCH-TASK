@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@300..900&family=Protest+Revolution&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@300..900&family=Protest+Revolution&display=swap");
+ */
+@import url("https://fonts.googleapis.com/css2?family=Angkor&family=Lobster&family=Merienda:wght@300..900&family=Protest+Revolution&display=swap");
 
 * {
   margin: 0;
@@ -11,26 +13,66 @@ body {
   height: 100%;
   box-sizing: border-box;
   /* font-family: "Lobster", sans-serif; */
-  font-family: "Protest Revolution", sans-serif;
+  font-family: "Angkor", serif;
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  background-image: url(./images/top-view-office-desk-workspace-with-smartphone-notebook-graphic-tablet-keyboard-mouse-b_639785-11062.jpg);
+  background-image: url(./images/pexels-fwstudio-139306.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
-.transparent .trans {
+
+.trans {
+  outline: none;
+  border: none;
   background-color: transparent;
-  border-bottom: 2px solid white;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  color: rgb(14, 13, 13);
+  font-family: "Merienda", sans-serif;
+  border-bottom: 2px solid black;
 }
+input {
+  cursor: url("./images/pen-outline_4227051.png"), auto;
+}
+i {
+  font-size: 25px;
+}
+input {
+  width: 80%;
+}
+
 .check {
-  border-top: 2px solid white;
-  background-color: aliceblue;
+  border-top: 2px solid rgb(1, 1, 1);
+  background-color: rgba(76, 77, 77, 0.256) !important;
+  margin-left: 8px;
+  text-decoration: line-through 1.5px;
+}
+
+.notebooks {
+  background-image: url(./images/notebook.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 500px;
+  padding: 6px;
+  /* overflow: hidden; */
+  margin: auto;
+  margin-top: 10x;
+}
+textarea {
+  height: 90px;
+  margin-left: 20px;
+  background-color: rgb(246, 185, 105) !important;
+  text-align: center;
+}
+.mar {
+  margin-left: 56%;
+}
+
+.flowers {
+  margin-left: 84%;
 }
